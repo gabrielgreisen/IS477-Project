@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# API keys
+keys/
+
+# Data - sensitive/large files
+data/raw/compustat/
+data/raw/fred/fred_master.csv
