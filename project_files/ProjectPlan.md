@@ -79,7 +79,7 @@ These three datasets differ in access method (SQL query, REST API, direct downlo
 
 | Week | Dates | Task | Owner | Requirement |
 | :---- | :---- | :---- | :---- | :---- |
-| **1–2** | Mar 2–10 | Acquire Compustat data via WRDS SQL; download FRED series via API; download LoPucki BRD; document acquisition steps | Gabriel (WRDS), Christina (FRED, LoPucki) | Data collection |
+| **1–2** | Mar 2–10 | Acquire Compustat data via WRDS SQL; download FRED series via API; download LoPucki BRD; document acquisition steps | Gabriel (WRDS, FRED), Christina (LoPucki) | Data collection |
 | **3** | Mar 10–28 | Profile all datasets: null counts, distributions, outliers, type checks; document quality issues; run initial cleaning (missing values, duplicates, type coercion) | Christina, Gabriel  | Data quality & cleaning |
 | **4** | Mar 29–Apr 4 | Integrate datasets: match LoPucki to Compustat; align FRED quarterly series to Compustat fiscal years; construct derived features (leverage, Altman Z-score, distress indicators); document integration logic | Gabriel, Christina  | Data integration |
 | **5** | Apr 5–11 | Build Snakemake workflow automating acquisition, cleaning, integration, and analysis; create requirements.txt; test end-to-end reproducibility | Gabriel, Christina  | Workflow & reproducibility |
