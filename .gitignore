@@ -6,4 +6,13 @@ keys/
 
 # Data - sensitive/large files
 data/raw/compustat/
+data/raw/crsp/
+data/raw/trace/
+data/raw/moodys_orbis/
+data/raw/LSEG/
+data/raw/bordex/
+data/raw/factset/
+data/raw/WRDS_linking/
 data/raw/fred/fred_master.csv
+data/clean/
+!data/clean/*.ipynb
