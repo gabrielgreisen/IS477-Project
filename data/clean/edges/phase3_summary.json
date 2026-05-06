@@ -1,0 +1,258 @@
+{
+  "layers": {
+    "supply_chain": {
+      "file": "supply_chain_edges.parquet",
+      "directional": true,
+      "total_quarterly_edges": 531816,
+      "unique_pairs_all_time": 35455,
+      "connected_firms": 13186,
+      "isolated_firms": 18949,
+      "mean_degree": 5.38,
+      "median_degree": 3,
+      "max_degree": 608,
+      "max_degree_firm": "WALMART INC",
+      "density_pct": 0.003433,
+      "edges_per_year_sample": {
+        "1995": 13616,
+        "2000": 12408,
+        "2005": 13392,
+        "2007": 13076,
+        "2010": 13984,
+        "2015": 14292,
+        "2020": 11420
+      },
+      "on_disk_mb": 2.87
+    },
+    "creditor": {
+      "file": "creditor_edges.parquet",
+      "directional": false,
+      "total_quarterly_edges": 45536702,
+      "unique_pairs_all_time": 2643425,
+      "connected_firms": 7592,
+      "isolated_firms": 24543,
+      "mean_degree": 696.37,
+      "median_degree": 504,
+      "max_degree": 5497,
+      "max_degree_firm": "MITSUBISHI UFJ FINANCIAL GRP",
+      "density_pct": 0.511981,
+      "edges_per_year_sample": {
+        "1995": 166152,
+        "2000": 1348853,
+        "2005": 1067481,
+        "2007": 1173334,
+        "2010": 1305483,
+        "2015": 2162570,
+        "2020": 2066575
+      },
+      "on_disk_mb": 155.77
+    },
+    "industry_4digit": {
+      "file": "industry_4digit_edges.parquet",
+      "directional": false,
+      "total_quarterly_edges": 78408260,
+      "unique_pairs_all_time": 3562625,
+      "connected_firms": 32104,
+      "isolated_firms": 31,
+      "mean_degree": 221.94,
+      "median_degree": 89,
+      "max_degree": 2064,
+      "max_degree_firm": "REGENETP INC",
+      "density_pct": 0.690013,
+      "edges_per_year_sample": {
+        "1995": 1868636,
+        "2000": 2332776,
+        "2005": 2013536,
+        "2007": 1653712,
+        "2010": 1475796,
+        "2015": 1951144,
+        "2020": 2493872
+      },
+      "on_disk_mb": 9.66
+    },
+    "industry_3digit": {
+      "file": "industry_3digit_edges.parquet",
+      "directional": false,
+      "total_quarterly_edges": 65597236,
+      "unique_pairs_all_time": 3409810,
+      "connected_firms": 23730,
+      "isolated_firms": 8405,
+      "mean_degree": 287.38,
+      "median_degree": 123,
+      "max_degree": 3452,
+      "max_degree_firm": "UNISYS CORP",
+      "density_pct": 0.660415,
+      "edges_per_year_sample": {
+        "1995": 1790488,
+        "2000": 3027656,
+        "2005": 1644672,
+        "2007": 1280468,
+        "2010": 1091244,
+        "2015": 1439884,
+        "2020": 1821804
+      },
+      "on_disk_mb": 7.23
+    },
+    "geographic": {
+      "file": "geographic_edges.parquet",
+      "directional": false,
+      "total_quarterly_edges": 294384508,
+      "unique_pairs_all_time": 10519876,
+      "connected_firms": 28254,
+      "isolated_firms": 3881,
+      "mean_degree": 744.66,
+      "median_degree": 498,
+      "max_degree": 4516,
+      "max_degree_firm": "WELLS FARGO & CO",
+      "density_pct": 2.0375,
+      "edges_per_year_sample": {
+        "1995": 10028552,
+        "2000": 9828940,
+        "2005": 6263680,
+        "2007": 5062576,
+        "2010": 4200092,
+        "2015": 4129620,
+        "2020": 3956944
+      },
+      "on_disk_mb": 13.63
+    },
+    "ownership": {
+      "file": "ownership_edges.parquet",
+      "directional": true,
+      "total_quarterly_edges": 0,
+      "unique_pairs_all_time": 0,
+      "connected_firms": 0,
+      "isolated_firms": 32135,
+      "mean_degree": 0,
+      "median_degree": 0,
+      "max_degree": 0,
+      "max_degree_firm": null,
+      "density_pct": 0.0,
+      "edges_per_year_sample": {},
+      "on_disk_mb": 0.0
+    },
+    "board_interlock": {
+      "file": "board_interlock_edges.parquet",
+      "directional": false,
+      "total_quarterly_edges": 1676148,
+      "unique_pairs_all_time": 96161,
+      "connected_firms": 9652,
+      "isolated_firms": 22483,
+      "mean_degree": 19.93,
+      "median_degree": 13,
+      "max_degree": 396,
+      "max_degree_firm": "MICROSOFT CORP",
+      "density_pct": 0.018625,
+      "edges_per_year_sample": {
+        "1995": 14644,
+        "2000": 39836,
+        "2005": 63848,
+        "2007": 66400,
+        "2010": 55984,
+        "2015": 68464,
+        "2020": 63668
+      },
+      "on_disk_mb": 1.08
+    }
+  },
+  "cross_layer_2007": {
+    "total_unique_pairs_any_layer": 2321050,
+    "pairs_by_layer_count": {
+      "1": 2259527,
+      "2": 60824,
+      "3": 693,
+      "4": 6
+    }
+  },
+  "spot_checks": {
+    "enron_pre_2002": {
+      "supply_chain": {
+        "quarterly_edge_rows": 808,
+        "distinct_counterparties": 89
+      },
+      "creditor": {
+        "quarterly_edge_rows": 744,
+        "distinct_counterparties": 78
+      },
+      "industry_4digit": {
+        "quarterly_edge_rows": 3568,
+        "distinct_counterparties": 359
+      },
+      "industry_3digit": {
+        "quarterly_edge_rows": 2160,
+        "distinct_counterparties": 113
+      },
+      "geographic": {
+        "quarterly_edge_rows": 84296,
+        "distinct_counterparties": 1840
+      },
+      "ownership": {
+        "quarterly_edge_rows": 0,
+        "distinct_counterparties": 0
+      },
+      "board_interlock": {
+        "quarterly_edge_rows": 0,
+        "distinct_counterparties": 0
+      }
+    },
+    "lehman_pre_2009": {
+      "supply_chain": {
+        "quarterly_edge_rows": 28,
+        "distinct_counterparties": 3
+      },
+      "creditor": {
+        "quarterly_edge_rows": 2025,
+        "distinct_counterparties": 397
+      },
+      "industry_4digit": {
+        "quarterly_edge_rows": 4784,
+        "distinct_counterparties": 160
+      },
+      "industry_3digit": {
+        "quarterly_edge_rows": 0,
+        "distinct_counterparties": 0
+      },
+      "geographic": {
+        "quarterly_edge_rows": 57440,
+        "distinct_counterparties": 1650
+      },
+      "ownership": {
+        "quarterly_edge_rows": 0,
+        "distinct_counterparties": 0
+      },
+      "board_interlock": {
+        "quarterly_edge_rows": 1004,
+        "distinct_counterparties": 57
+      }
+    },
+    "apple_all_time": {
+      "supply_chain": {
+        "quarterly_edge_rows": 1848,
+        "distinct_counterparties": 117
+      },
+      "creditor": {
+        "quarterly_edge_rows": 682,
+        "distinct_counterparties": 60
+      },
+      "industry_4digit": {
+        "quarterly_edge_rows": 6768,
+        "distinct_counterparties": 256
+      },
+      "industry_3digit": {
+        "quarterly_edge_rows": 21260,
+        "distinct_counterparties": 709
+      },
+      "geographic": {
+        "quarterly_edge_rows": 179712,
+        "distinct_counterparties": 4399
+      },
+      "ownership": {
+        "quarterly_edge_rows": 0,
+        "distinct_counterparties": 0
+      },
+      "board_interlock": {
+        "quarterly_edge_rows": 2276,
+        "distinct_counterparties": 118
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "feature_columns": [
+    "debt_to_assets",
+    "debt_to_equity",
+    "lt_debt_ratio",
+    "st_debt_ratio",
+    "interest_coverage",
+    "st_debt_share",
+    "roa",
+    "roe",
+    "ebitda_margin",
+    "gross_margin",
+    "operational_margin",
+    "current_ratio",
+    "quick_ratio",
+    "cash_to_assets",
+    "wc_to_assets",
+    "log_assets",
+    "log_revenue",
+    "log_mktcap",
+    "emp",
+    "asset_turnover",
+    "receivables_turnover",
+    "inventory_turnover",
+    "revenue_growth",
+    "asset_growth",
+    "emp_growth",
+    "opcf_to_assets",
+    "capex_to_assets",
+    "fcf_to_assets",
+    "altman_z",
+    "ret_12m",
+    "ret_3m",
+    "volatility_12m",
+    "share_turnover",
+    "log_mktcap_crsp",
+    "market_to_book",
+    "A191RL1Q225SBEA",
+    "BAA10Y",
+    "BAMLC0A4CBBB",
+    "BAMLH0A0HYM2",
+    "DAAA",
+    "DBAA",
+    "FEDFUNDS",
+    "GS10",
+    "INDPRO",
+    "T10Y2Y",
+    "TB3MS",
+    "TEDRATE",
+    "UNRATE",
+    "VIXCLS",
+    "BAA_AAA_spread",
+    "sp500_ret_12m",
+    "log_avg_volume",
+    "log_credit_spread"
+  ],
+  "n_features": 53,
+  "edge_types": [
+    "('firm', 'supplies', 'firm')",
+    "('firm', 'shares_creditor', 'firm')",
+    "('firm', 'same_industry_4d', 'firm')",
+    "('firm', 'same_industry_3d', 'firm')",
+    "('firm', 'same_state', 'firm')",
+    "('firm', 'owns', 'firm')",
+    "('firm', 'shares_director', 'firm')",
+    "('firm', 'supplied_by', 'firm')"
+  ],
+  "edge_attr_columns": {
+    "('firm', 'supplies', 'firm')": [
+      "salecs",
+      "customer_concentration",
+      "relationship_duration"
+    ],
+    "('firm', 'supplied_by', 'firm')": [
+      "salecs",
+      "customer_concentration",
+      "relationship_duration"
+    ],
+    "('firm', 'shares_creditor', 'firm')": [
+      "shared_lender_count",
+      "shared_exposure",
+      "shared_lead_arranger"
+    ],
+    "('firm', 'same_industry_4d', 'firm')": [],
+    "('firm', 'same_industry_3d', 'firm')": [],
+    "('firm', 'same_state', 'firm')": [],
+    "('firm', 'owns', 'firm')": [
+      "ownership_pct"
+    ],
+    "('firm', 'shares_director', 'firm')": [
+      "shared_director_count",
+      "shared_executive"
+    ]
+  },
+  "split_boundaries": {
+    "train": "1990-Q1 to 2006-Q4",
+    "val": "2007-Q1 to 2012-Q4",
+    "test": "2013-Q1 to 2024-Q4",
+    "pretrain": "before 1990-Q1"
+  },
+  "total_quarters": 261,
+  "label_columns": [
+    "y_default_1q",
+    "y_default_4q",
+    "y_default_8q",
+    "y_spread"
+  ],
+  "metadata_columns": [
+    "gvkeys",
+    "datadates",
+    "node_class",
+    "has_crsp"
+  ],
+  "node_class_encoding": {
+    "nonfinancial": 0,
+    "financial": 1
+  },
+  "nan_imputation": "0.0 with x_mask boolean indicator",
+  "label_nan_sentinel": -1.0
+}

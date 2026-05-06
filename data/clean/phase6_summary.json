@@ -1,0 +1,88 @@
+{
+  "treasury_curve": {
+    "tenors": [
+      "GS1",
+      "GS2",
+      "GS3",
+      "GS5",
+      "GS7",
+      "GS10",
+      "GS20",
+      "GS30"
+    ],
+    "n_dates": 276,
+    "date_range": "2002-01-01 to 2024-12-01"
+  },
+  "bond_firm_map": {
+    "master_rows": 3223786,
+    "corporate_after_filter": 2711043,
+    "mapped_to_firm_universe": 1524613,
+    "unique_firms": 5400
+  },
+  "trade_spreads": {
+    "total_trades": 223345263,
+    "unique_firms": 3668,
+    "date_range": "2002-07-01 \u2192 2026-02-13"
+  },
+  "quarterly_aggregate": {
+    "firm_quarters": 139624,
+    "unique_firms": 3668,
+    "median_spread_overall_bps": 175.59524536132812,
+    "median_by_year": {
+      "2002": 193.0,
+      "2003": 108.0,
+      "2004": 92.0,
+      "2005": 136.0,
+      "2006": 142.0,
+      "2007": 174.0,
+      "2008": 403.0,
+      "2009": 461.0,
+      "2010": 259.0,
+      "2011": 253.0,
+      "2012": 269.0,
+      "2013": 201.0,
+      "2014": 161.0,
+      "2015": 207.0,
+      "2016": 228.0,
+      "2017": 148.0,
+      "2018": 138.0,
+      "2019": 150.0,
+      "2020": 208.0,
+      "2021": 113.0,
+      "2022": 156.0,
+      "2023": 150.0,
+      "2024": 108.0,
+      "2025": 80.0,
+      "2026": 44.0
+    }
+  },
+  "annual_aggregate": {
+    "firm_years": 29970,
+    "unique_firms": 3156
+  },
+  "coverage": {
+    "quarterly_with_spread_pct": 6.52,
+    "annual_with_spread_pct": 6.78,
+    "unique_firms_with_spread": 3668
+  },
+  "node_class_coverage": {
+    "financial": {
+      "rows": 270811,
+      "with_spread": 24079,
+      "coverage_pct": 8.89
+    },
+    "nonfinancial": {
+      "rows": 1276808,
+      "with_spread": 77464,
+      "coverage_pct": 6.07
+    }
+  },
+  "spot_checks": {
+    "crisis_yrs_median_spread_bps": {
+      "2007": 174.0,
+      "2008": 403.0,
+      "2009": 461.0,
+      "2020": 208.0
+    }
+  }
+}

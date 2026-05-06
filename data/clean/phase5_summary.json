@@ -1,0 +1,100 @@
+{
+  "total_quarters": 261,
+  "date_range": "1961-Q1 \u2192 2026-Q1",
+  "total_disk_size_gb": 12.95,
+  "largest_snapshot_mb": 137.0,
+  "largest_quarter": "1999-Q4",
+  "largest_n_nodes": 10463,
+  "split_counts": {
+    "pretrain": 116,
+    "train": 68,
+    "test": 53,
+    "val": 24
+  },
+  "feature_columns": [
+    "debt_to_assets",
+    "debt_to_equity",
+    "lt_debt_ratio",
+    "st_debt_ratio",
+    "interest_coverage",
+    "st_debt_share",
+    "roa",
+    "roe",
+    "ebitda_margin",
+    "gross_margin",
+    "operational_margin",
+    "current_ratio",
+    "quick_ratio",
+    "cash_to_assets",
+    "wc_to_assets",
+    "log_assets",
+    "log_revenue",
+    "log_mktcap",
+    "emp",
+    "asset_turnover",
+    "receivables_turnover",
+    "inventory_turnover",
+    "revenue_growth",
+    "asset_growth",
+    "emp_growth",
+    "opcf_to_assets",
+    "capex_to_assets",
+    "fcf_to_assets",
+    "altman_z",
+    "ret_12m",
+    "ret_3m",
+    "volatility_12m",
+    "share_turnover",
+    "log_mktcap_crsp",
+    "market_to_book",
+    "A191RL1Q225SBEA",
+    "BAA10Y",
+    "BAMLC0A4CBBB",
+    "BAMLH0A0HYM2",
+    "DAAA",
+    "DBAA",
+    "FEDFUNDS",
+    "GS10",
+    "INDPRO",
+    "T10Y2Y",
+    "TB3MS",
+    "TEDRATE",
+    "UNRATE",
+    "VIXCLS",
+    "BAA_AAA_spread",
+    "sp500_ret_12m",
+    "log_avg_volume",
+    "log_credit_spread"
+  ],
+  "n_features": 53,
+  "edge_types_count": 8,
+  "default_rates_by_split_4q": {
+    "train": {
+      "pos": 2133,
+      "total": 608357,
+      "rate_pct": 0.3506
+    },
+    "val": {
+      "pos": 827,
+      "total": 173037,
+      "rate_pct": 0.4779
+    },
+    "test": {
+      "pos": 1046,
+      "total": 343266,
+      "rate_pct": 0.3047
+    },
+    "pretrain": {
+      "pos": 998,
+      "total": 415987,
+      "rate_pct": 0.2399
+    }
+  },
+  "connectivity_2007Q3": {
+    "n_nodes": 7600,
+    "isolated_pct": 2.59,
+    "with_sc_edge_pct": 25.38,
+    "with_cred_edge_pct": 12.64,
+    "mean_total_degree": 1025.8
+  }
+}

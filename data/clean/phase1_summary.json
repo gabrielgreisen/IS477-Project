@@ -1,0 +1,15 @@
+{
+  "unique_gvkeys": 32135,
+  "total_firm_years": 441934,
+  "single_year_firms": 850,
+  "financial": 5479,
+  "nonfinancial": 26656,
+  "active": 7618,
+  "inactive": 24517,
+  "has_crsp": 25726,
+  "no_crsp": 6409,
+  "bankruptcy_liquidation": 1739,
+  "negative_total_assets": 0,
+  "first_year": 1950,
+  "last_year": 2025
+}

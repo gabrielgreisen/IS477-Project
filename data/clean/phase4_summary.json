@@ -1,0 +1,70 @@
+{
+  "lopucki": {
+    "raw_rows": 1218,
+    "matched_total": 1138,
+    "matched_via_gvkey_before": 1134,
+    "matched_via_cik": 1,
+    "matched_via_name": 3,
+    "unmatched": 80,
+    "match_rate_pct": 93.43,
+    "unique_gvkeys": 1055
+  },
+  "compustat_delistings": {
+    "dlrsn_2_bankruptcy": 1004,
+    "dlrsn_3_liquidation": 735
+  },
+  "default_events": {
+    "total_unique_gvkeys": 2594,
+    "by_source": {
+      "compustat": 1539,
+      "lopucki": 855,
+      "both": 200
+    },
+    "by_type": {
+      "bankruptcy_ch11": 1030,
+      "bankruptcy_compustat": 863,
+      "liquidation": 676,
+      "bankruptcy_ch7": 24,
+      "bankruptcy_other": 1
+    },
+    "by_decade": {
+      "1960s": 2,
+      "1970s": 201,
+      "1980s": 463,
+      "1990s": 655,
+      "2000s": 667,
+      "2010s": 365,
+      "2020s": 241
+    }
+  },
+  "annual_labels": {
+    "rows": 438085,
+    "rows_dropped_after_default": 15664,
+    "positive_1y": 1189,
+    "positive_2y": 3039,
+    "rate_1y_pct": 0.2714,
+    "rate_2y_pct": 0.6937
+  },
+  "quarterly_labels": {
+    "rows": 1540647,
+    "positive_1q": 793,
+    "positive_4q": 5004,
+    "positive_8q": 12558,
+    "rate_1q_pct": 0.05147,
+    "rate_4q_pct": 0.3248,
+    "rate_8q_pct": 0.81511
+  },
+  "crisis_year_default_rates_1y_pct": {
+    "2001": 0.6334,
+    "2002": 0.4766,
+    "2008": 1.04,
+    "2009": 0.2953,
+    "2020": 0.1599
+  },
+  "validation": {
+    "spot_checks_all_passed": true,
+    "temporal_violations": 0,
+    "events_not_covered_annual_2y": 726,
+    "events_not_covered_quarterly_8q": 449
+  }
+}
